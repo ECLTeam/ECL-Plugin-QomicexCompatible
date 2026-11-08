@@ -25,12 +25,12 @@ ruff format --check .
 
 - `main.py` — 插件入口，注册命令与事件
 - `transfer.py` — 角色数据读取、转换与写入
-- `plugin.json` — 插件清单（名称、权限、入口）
+- `plugin.json` — 插件清单（名称、入口）
 - `tests/` — 迁移自主仓库的行为测试
 
 ## 规范
 
-插件标识为 `ECL-Plugin-QomicexCompatible`。修改 `plugin.json` 的 `name` 等于改变已安装插件的身份，会影响权限授权与设置迁移，须谨慎评估。代码风格遵循 `pyproject.toml` 中的 Ruff 配置。
+插件标识为 `ECL-Plugin-QomicexCompatible`。修改 `plugin.json` 的 `name` 等于改变已安装插件的身份，会影响设置归属与插件目录名，须谨慎评估。代码风格遵循 `pyproject.toml` 中的 Ruff 配置。
 
 ## 许可证
 
