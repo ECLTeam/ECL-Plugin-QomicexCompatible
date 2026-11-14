@@ -17,7 +17,7 @@ from threading import RLock
 from time import monotonic
 from uuid import uuid4
 
-from ECL.plugin_api.contracts import _json_value
+from ECL.plugins.api.contracts import _json_value
 
 
 class JsonTransfers:

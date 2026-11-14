@@ -6,6 +6,6 @@
   "description": "只读识别 QomicEX 实例元数据，可选为联机提供 QomicEX 扩展协议。",
   "homepage": "https://github.com/ECLTeam/ECL-Plugin-QomicexCompatible",
   "license": "GPL-3.0",
-  "api_version": 2,
+  "api_version": 1,
   "entry_point": "main:Plugin"
 }
