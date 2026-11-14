@@ -9,6 +9,7 @@
 3. **提交**：使用 `feat:` / `fix:` / `docs:` / `test:` / `chore:` 前缀；提交前运行 `ruff check .`、`ruff format --check .` 与 `python -m pytest --tb=short`。
 4. **能力使用**：宿主权限系统已移除（主仓库 ADR-005），启用即获得全部 Worker API；新增宿主调用须在 PR 描述中说明用途。
 5. **测试**：行为变更须有对应测试；`tests/` 内的测试不依赖宿主仓库，保持这一点。
+6. **入口导入冒烟**：`main.py` 顶层只做类定义与常量装配，不执行连接、线程或网络副作用；`tests/test_entry_import.py` 必须保持可导入入口，SDK 导入路径（`ECL.plugins.api`）漂移由它在 CI 拦截。
 
 ## 文件职责
 
